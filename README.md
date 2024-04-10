@@ -1,5 +1,5 @@
 # LSIR
-This repo is for source code of DASFAA 2024 paper "Learning Social Graph for Inactive User Recommendation". \
+This repo is for source code of DASFAA 2024 paper "Learning Social Graph for Inactive User Recommendation". 
 
 # Environment Settings
 ```
