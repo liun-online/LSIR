@@ -103,5 +103,5 @@ class Evaluation:
         recall_inac = np.array(recall_inac)
         precision_inac = np.array(precision_inac)
         ndcg_inac = np.array(ndcg_inac)
-        return (ndcg.mean(), recall.mean(), precision.mean(), hr/(hr_len+1e-8)),\
-             (ndcg_inac.mean(), recall_inac.mean(), precision_inac.mean(), hr_inac/(hr_inac_len+1e-8))
+        return (ndcg.mean(), hr/(hr_len+1e-8), precision.mean()),\
+             (ndcg_inac.mean(), hr_inac/(hr_inac_len+1e-8), precision_inac.mean())
