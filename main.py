@@ -48,12 +48,12 @@ class TrainFlow:
         results_20, result_inacs_20 = eva.get_result(20, all_user_emb, all_item_emb)
         if test_flag:
             f = open(self.own_str+"_10.txt", "a")
-            f.write(str(results_10[0])+"\t"+str(results_10[1])+"\t"+str(results_10[2])+"\t"+str(results_10[3])+"\t"+\
-                str(results_inac_10[0])+"\t"+str(results_inac_10[1])+"\t"+str(results_inac_10[2])+"\t"+str(results_inac_10[3])+"\n")
+            f.write(str(results_10[0])+"\t"+str(results_10[1])+"\t"+str(results_10[2])+"\t"+\
+                str(results_inac_10[0])+"\t"+str(results_inac_10[1])+"\t"+str(results_inac_10[2])+"\n")
             f.close()
             f = open(self.own_str+"_20.txt", "a")
-            f.write(str(results_20[0])+"\t"+str(results_20[1])+"\t"+str(results_20[2])+"\t"+str(results_20[3])+"\t"+\
-                str(result_inacs_20[0])+"\t"+str(result_inacs_20[1])+"\t"+str(result_inacs_20[2])+"\t"+str(result_inacs_20[3])+"\n")
+            f.write(str(results_20[0])+"\t"+str(results_20[1])+"\t"+str(results_20[2])+"\t"+\
+                str(results_inac_20[0])+"\t"+str(results_inac_20[1])+"\t"+str(results_inac_20[2])+"\n")
             f.close()
 
     def train(self):
