@@ -23,6 +23,8 @@ class TrainFlow:
         self.own_str = args.dataset
         print(self.own_str)
         self.dataset = Loader(args)
+        self.args.user_feat_dim = self.dataset.user_feat.shape[1]
+        self.args.item_feat_dim = self.dataset.item_feat.shape[1]
         self.val_data = self.dataset.valDict
         self.test_data = self.dataset.testDict
         self.add_prob, self.dele_prob = utils.get_add_dele_prob(args, self.dataset.users_D)
