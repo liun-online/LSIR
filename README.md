@@ -7,6 +7,8 @@ Authors: Nian Liu, Shen Fan, Ting Bai, Peng Wang, Mingwei Sun, Yanhu Mo, Xiaoxia
 
 # Environment Settings
 ```
+scipy==1.12.0
+networkx==3.2.1
 torch==1.13.1
 
 GPU: Tesla-V100, Memory 32G
