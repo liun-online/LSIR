@@ -7,6 +7,8 @@ Authors: Nian Liu, Shen Fan, Ting Bai, Peng Wang, Mingwei Sun, Yanhu Mo, Xiaoxia
 
 # Environment Settings
 ```
+torch==1.13.1
+
 GPU: Tesla-V100, Memory 32G
 CPU: Intel(R) Xeon(R) Platinum 8163 CPU @2.50GHz
 ```
